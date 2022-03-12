@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-  ifstream f("bac.txt");
+    ifstream f("bac.txt");
     int  n,a[100],j,p,x,i,aux,ok=0;
     n=0;
     f>>x;
@@ -16,7 +16,7 @@ int main()
         a[n]=x;
         
     }
-        for(i=1;i<=n-1;i++)
+    for(i=1;i<=n-1;i++)
         for(j=i+1;j<=n;j++)
             if (a[i]>a[j])
             {
@@ -24,11 +24,11 @@ int main()
                 a[i]=a[j];
                 a[j]=aux;
             }
-        for(i=1;i<=n;i++)
-            if(a[i]==p && ok==0)
-            {
-                cout <<i;
-                ok=1;
-            }
+   for(i=1;i<=n;i++)
+        if(a[i]==p && ok==0)
+        {
+             cout <<i;
+             ok=1;
+        }
     
 }
